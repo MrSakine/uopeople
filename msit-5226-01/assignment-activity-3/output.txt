@@ -1,0 +1,72 @@
+(venv) filymohamedsakine@Flyer-4 assignment-activity-3 % python main.py
+--- Step 1: Loading and Preprocessing Data ---
+Initial Data Shape: (200, 7)
+
+Missing Values per column:
+ Customer ID              0
+Age                     20
+Monthly Charges         20
+Tenure (Months)         20
+Contract Type            0
+Has Internet Service     0
+Churn                    0
+dtype: int64
+
+Replaced '5 (Unknown)' in Contract Type with mode: 2 (One-Year)
+
+Categorical columns to check for missing values: ['Contract Type', 'Has Internet Service', 'Churn']
+Missing values in Contract Type: 0
+Missing values in Has Internet Service: 0
+Missing values in Churn: 0
+
+Missing values after preprocessing:
+ Age                     0
+Monthly Charges         0
+Tenure (Months)         0
+Contract Type           0
+Has Internet Service    0
+Churn                   0
+dtype: int64
+
+--- Step 2: Feature Engineering ---
+
+Data after Encoding (First 5 rows):
+    Age  Monthly Charges  Tenure (Months)  Contract Type  Has Internet Service  Churn
+0  44.0           98.520             58.0              1                     0      0
+1  42.0           33.880             18.0              0                     0      1
+2  25.0           70.350             36.0              1                     0      0
+3  50.0           98.040             61.0              0                     0      0
+4  82.0           63.235              4.0              1                     1      0
+
+--- Step 3: Data Splitting ---
+Training set shape: (160, 5)
+Testing set shape: (40, 5)
+
+--- Step 4: Model Training (Gaussian Naive Bayes) ---
+Model trained successfully.
+
+--- Step 5: Performance Evaluation ---
+2025-11-27 12:38:42.125 Python[96438:1230206] +[IMKClient subclass]: chose IMKClient_Legacy
+2025-11-27 12:38:42.125 Python[96438:1230206] +[IMKInputSession subclass]: chose IMKInputSession_Legacy
+
+Model Performance Metrics:
+Accuracy:  0.5500
+Precision: 0.3333
+Recall:    0.1250
+
+Detailed Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.59      0.83      0.69        24
+           1       0.33      0.12      0.18        16
+
+    accuracy                           0.55        40
+   macro avg       0.46      0.48      0.44        40
+weighted avg       0.49      0.55      0.49        40
+
+
+--- Step 6: ROC Curve and AUC ---
+AUC Score: 0.5130
+
+Analysis Complete. Please check the generated PNG files for visualizations.
+(venv) filymohamedsakine@Flyer-4 assignment-activity-3 % 
