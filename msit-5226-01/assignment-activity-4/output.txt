@@ -1,0 +1,35 @@
+(venv) filymohamedsakine@Flyer-4 assignment-activity-4 % python main.py 
+--- Loading Data ---
+Dataset loaded successfully.
+Data Shape: (1081, 11)
+
+Selected features for clustering:
+     pH  alcohol  total sulfur dioxide
+0  3.39     10.0                  21.0
+1  3.36      9.5                  18.0
+2  3.28      9.2                  65.0
+3  3.58      9.9                  59.0
+4  3.26      9.1                  29.0
+
+--- Preprocessing Data ---
+Data scaled using StandardScaler.
+
+--- Determining Optimal Clusters (Elbow Method) ---
+2025-12-06 14:08:51.875 Python[19710:592774] +[IMKClient subclass]: chose IMKClient_Legacy
+2025-12-06 14:09:11.162 Python[19710:592774] +[IMKInputSession subclass]: chose IMKInputSession_Legacy
+
+Applying K-Means with k=3...
+
+Silhouette Score for k=3: 0.2833
+
+--- Visualizing Clusters ---
+
+--- Cluster Summary ---
+               pH    alcohol  total sulfur dioxide
+Cluster                                           
+0        3.240156   9.980442             32.801170
+1        3.413459  11.571937             34.756757
+2        3.295707   9.726178             97.861111
+
+Analysis Complete. Please refer to 'cluster_pairplot.jpg' for the visual submission.
+(venv) filymohamedsakine@Flyer-4 assignment-activity-4 % 
