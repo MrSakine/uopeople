@@ -1,0 +1,49 @@
+(venv) filymohamedsakine@Flyer-4 assignment-activity-5 % python ./main.py
+==========================================
+TASK 1: ANALYZING EXISTING CODE
+==========================================
+
+--- Task 1b: Original Code (hidden_layer_sizes=(10,)) ---
+/Users/filymohamedsakine/Documents/uopeople/venv/lib/python3.13/site-packages/sklearn/neural_network/_multilayer_perceptron.py:781: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (1000) reached and the optimization hasn't converged yet.
+  warnings.warn(
+Accuracy with 10 hidden nodes: 0.98
+
+--- Task 1c: Modified Code (hidden_layer_sizes=(30,)) ---
+/Users/filymohamedsakine/Documents/uopeople/venv/lib/python3.13/site-packages/sklearn/neural_network/_multilayer_perceptron.py:781: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (1000) reached and the optimization hasn't converged yet.
+  warnings.warn(
+Accuracy with 30 hidden nodes: 1.00
+
+--- Task 1d: Printing Predictions with Name ---
+Result obtained by Fily Mohamed SAKINE:
+ [1 0 2 1 1 0 1 2 1 1 2 0 0 0 0 1 2 1 1 2 0 2 0 2 2 2 2 2 0 0 0 0 1 0 0 2 1
+ 0 0 0 2 1 1 0 0]
+
+
+==========================================
+TASK 2: WINE CLASSIFICATION
+==========================================
+
+--- Task 2b: Features and Target ---
+Feature Names: ['alcohol', 'malic_acid', 'ash', 'alcalinity_of_ash', 'magnesium', 'total_phenols', 'flavanoids', 'nonflavanoid_phenols', 'proanthocyanins', 'color_intensity', 'hue', 'od280/od315_of_diluted_wines', 'proline']
+Target Classes: ['class_0' 'class_1' 'class_2']
+
+--- Task 2c: Model Implementation & Results ---
+Wine Classification Accuracy: 0.98
+
+Confusion Matrix:
+[[19  0  0]
+ [ 0 20  1]
+ [ 0  0 14]]
+
+Classification Report:
+              precision    recall  f1-score   support
+
+     class_0       1.00      1.00      1.00        19
+     class_1       1.00      0.95      0.98        21
+     class_2       0.93      1.00      0.97        14
+
+    accuracy                           0.98        54
+   macro avg       0.98      0.98      0.98        54
+weighted avg       0.98      0.98      0.98        54
+
+(venv) filymohamedsakine@Flyer-4 assignment-activity-5 % 
