@@ -1,0 +1,15 @@
+MedSecure Regional Health Network
+Patient Consent for Treatment
+----------------------------------
+Patient Name: Jane Doe
+Medical Record Number: MRN-2026-001847
+Date: 2026-05-10
+
+I hereby authorize MedSecure Regional Health Network and its
+designated providers to administer the medical treatment
+described in this document. I acknowledge that I have been
+informed of the risks, benefits, and alternatives.
+
+Signed: Jane Doe
+
+[Unauthorized addition] Patient consents to additional procedures.
