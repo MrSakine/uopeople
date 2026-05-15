@@ -1,0 +1,1615 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wapiti scan report</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+    <div id="page">
+        <header style="text-align: center">
+        <h2 class="title" style="text-align: center">Wapiti vulnerability report</h2>
+        <h3>Target: http://127.0.0.1/</h3>
+        <p>Date of the scan: Thu, 14 May 2026 04:01:42 +0000. Scope of the scan: folder. Crawled pages: 76</p>
+        </header>
+        <hr />
+
+        <h4>Summary</h4>
+        <table class="summary-table" style="background: url('logo_clear.png') no-repeat center;">
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Number of vulnerabilities found</th>
+                </tr>
+            </thead>
+            <tbody id="summary">
+                    <tr>
+                        <td class="small">
+                            Backup file
+                        </td>
+                        <td class="small text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Cleartext Submission of Password
+                        </td>
+                        <td class="small text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Weak credentials
+                        </td>
+                        <td class="small text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            CRLF Injection
+                        </td>
+                        <td class="small text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            <a href="#vuln_type_4">Content Security Policy Configuration</a>
+                        </td>
+                        <td class="small text-centered">2</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Cross Site Request Forgery
+                        </td>
+                        <td class="small text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            CVE-2024-55591
+                        </td>
+                        <td class="small text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Potentially dangerous file
+                        </td>
+                        <td class="small text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Command execution
+                        </td>
+                        <td class="small text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Path Traversal
+                        </td>
+                        <td class="small text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Fingerprint web application framework
+                        </td>
+                        <td class="small text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Fingerprint web server
+                        </td>
+                        <td class="small text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Htaccess Bypass
+                        </td>
+                        <td class="small text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            HTML Injection
+                        </td>
+                        <td class="small text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            <a href="#vuln_type_14">Clickjacking Protection</a>
+                        </td>
+                        <td class="small text-centered">1</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            HTTP Strict Transport Security (HSTS)
+                        </td>
+                        <td class="small text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            <a href="#vuln_type_16">MIME Type Confusion</a>
+                        </td>
+                        <td class="small text-centered">1</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            HttpOnly Flag cookie
+                        </td>
+                        <td class="small text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            <a href="#vuln_type_18">Unencrypted Channels</a>
+                        </td>
+                        <td class="small text-centered">4</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Inconsistent Redirection
+                        </td>
+                        <td class="small text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            <a href="#vuln_type_20">Information Disclosure - Full Path</a>
+                        </td>
+                        <td class="small text-centered">24</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            LDAP Injection
+                        </td>
+                        <td class="small text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Log4Shell
+                        </td>
+                        <td class="small text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            NS takeover
+                        </td>
+                        <td class="small text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Open Redirect
+                        </td>
+                        <td class="small text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Reflected Cross Site Scripting
+                        </td>
+                        <td class="small text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            <a href="#vuln_type_26">Secure Flag cookie</a>
+                        </td>
+                        <td class="small text-centered">2</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Spring4Shell
+                        </td>
+                        <td class="small text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            SQL Injection
+                        </td>
+                        <td class="small text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            TLS/SSL misconfigurations
+                        </td>
+                        <td class="small text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Server Side Request Forgery
+                        </td>
+                        <td class="small text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Stored HTML Injection
+                        </td>
+                        <td class="small text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Stored Cross Site Scripting
+                        </td>
+                        <td class="small text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Subdomain takeover
+                        </td>
+                        <td class="small text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Blind SQL Injection
+                        </td>
+                        <td class="small text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Unrestricted File Upload
+                        </td>
+                        <td class="small text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Vulnerable software
+                        </td>
+                        <td class="small text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Internal Server Error
+                        </td>
+                        <td class="small text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Resource consumption
+                        </td>
+                        <td class="small text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Review Webserver Metafiles for Information Leakage
+                        </td>
+                        <td class="small text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            Fingerprint web technology
+                        </td>
+                        <td class="small text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            HTTP Methods
+                        </td>
+                        <td class="small text-centered">0</td>
+                    </tr>
+                    <tr>
+                        <td class="small">
+                            TLS/SSL misconfigurations
+                        </td>
+                        <td class="small text-centered">0</td>
+                    </tr>
+            </tbody>
+        </table>
+        <hr />
+        <div id="details">
+                <h3 id="vuln_type_4">Content Security Policy Configuration</h3>
+                <dl>
+                    <dt>Description</dt>
+                    <dd>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks.</dd>
+                </dl>
+
+                    <div class="tab-container">
+                        <h4><span class="severity severity-low"></span> Vulnerability found in /</h4>
+                        <nav class="tab-nav">
+                            <a href="#tab-vuln-4-0-1" class="tab-link active">Description</a>
+                            <a href="#tab-vuln-4-0-2" class="tab-link">HTTP Request</a>
+                            <a href="#tab-vuln-4-0-4" class="tab-link">cURL command line</a>
+                            <a href="#tab-vuln-4-0-5" class="tab-link">WSTG Code</a>
+                        </nav>
+                        <section id="tab-vuln-4-0-1" class="tab-content" style="min-height: 124px;">
+                            <pre>CSP is not set for URL: http://127.0.0.1/</pre>
+                        </section>
+                        <section id="tab-vuln-4-0-2" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre style="white-space: normal;">
+                                    GET / HTTP/1.1
+                                    <br>
+                                    host: 127.0.0.1
+                                    <br>
+                                    connection: keep-alive
+                                    <br>
+                                    user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0
+                                    <br>
+                                    accept-language: en-US
+                                    <br>
+                                    accept-encoding: gzip, deflate, br
+                                    <br>
+                                    accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+                                    <br>
+                            </pre>
+                        </section>
+                        <section id="tab-vuln-4-0-4" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>curl &#34;http://127.0.0.1/&#34;</pre>
+                        </section>
+                        <section id="tab-vuln-4-0-5" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>[&#39;WSTG-CONF-12&#39;, &#39;OSHP-Content-Security-Policy&#39;]</pre>
+                        </section>
+                    </div>
+                    <div class="tab-container">
+                        <h4><span class="severity severity-medium"></span> Vulnerability found in /phpmyadmin/</h4>
+                        <nav class="tab-nav">
+                            <a href="#tab-vuln-4-1-1" class="tab-link active">Description</a>
+                            <a href="#tab-vuln-4-1-2" class="tab-link">HTTP Request</a>
+                            <a href="#tab-vuln-4-1-4" class="tab-link">cURL command line</a>
+                            <a href="#tab-vuln-4-1-5" class="tab-link">WSTG Code</a>
+                        </nav>
+                        <section id="tab-vuln-4-1-1" class="tab-content" style="min-height: 124px;">
+                            <pre>CSP &#34;script-src&#34; value is not safe for URL: http://127.0.0.1/phpmyadmin/</pre>
+                        </section>
+                        <section id="tab-vuln-4-1-2" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre style="white-space: normal;">
+                                    GET /phpmyadmin/ HTTP/1.1
+                                    <br>
+                                    host: 127.0.0.1
+                                    <br>
+                                    connection: keep-alive
+                                    <br>
+                                    user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0
+                                    <br>
+                                    accept-language: en-US
+                                    <br>
+                                    accept-encoding: gzip, deflate, br
+                                    <br>
+                                    accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+                                    <br>
+                            </pre>
+                        </section>
+                        <section id="tab-vuln-4-1-4" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>curl &#34;http://127.0.0.1/phpmyadmin/&#34;</pre>
+                        </section>
+                        <section id="tab-vuln-4-1-5" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>[&#39;WSTG-CONF-12&#39;, &#39;OSHP-Content-Security-Policy&#39;]</pre>
+                        </section>
+                    </div>
+
+                <dl><dt>Solutions</dt><dd>Configuring Content Security Policy involves adding the Content-Security-Policy HTTP header to a web page and giving it values to control what resources the user agent is allowed to load for that page.</dd></dl>
+                <h5>References</h5>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP">Mozilla: Content Security Policy (CSP)</a></li>
+                    <li><a href="https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html">OWASP: Content Security Policy Cheat Sheet</a></li>
+                    <li><a href="https://owasp.org/www-pdf-archive/2019-02-22_-_How_do_I_Content_Security_Policy_-_Print.pdf">OWASP: How to do Content Security Policy (PDF)</a></li>
+                    <li><a href="https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/12-Test_for_Content_Security_Policy">OWASP: Content Security Policy</a></li>
+                </ul>
+                <br />
+                <hr>
+                <h3 id="vuln_type_14">Clickjacking Protection</h3>
+                <dl>
+                    <dt>Description</dt>
+                    <dd>Clickjacking is a technique that tricks a user into clicking something different from what the user perceives, potentially revealing confidential information or taking control of their computer.</dd>
+                </dl>
+
+                    <div class="tab-container">
+                        <h4><span class="severity severity-low"></span> Vulnerability found in /</h4>
+                        <nav class="tab-nav">
+                            <a href="#tab-vuln-14-0-1" class="tab-link active">Description</a>
+                            <a href="#tab-vuln-14-0-2" class="tab-link">HTTP Request</a>
+                            <a href="#tab-vuln-14-0-4" class="tab-link">cURL command line</a>
+                            <a href="#tab-vuln-14-0-5" class="tab-link">WSTG Code</a>
+                        </nav>
+                        <section id="tab-vuln-14-0-1" class="tab-content" style="min-height: 124px;">
+                            <pre>X-Frame-Options is not set</pre>
+                        </section>
+                        <section id="tab-vuln-14-0-2" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre style="white-space: normal;">
+                                    GET / HTTP/1.1
+                                    <br>
+                                    host: 127.0.0.1
+                                    <br>
+                                    connection: keep-alive
+                                    <br>
+                                    user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0
+                                    <br>
+                                    accept-language: en-US
+                                    <br>
+                                    accept-encoding: gzip, deflate, br
+                                    <br>
+                                    accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+                                    <br>
+                            </pre>
+                        </section>
+                        <section id="tab-vuln-14-0-4" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>curl &#34;http://127.0.0.1/&#34;</pre>
+                        </section>
+                        <section id="tab-vuln-14-0-5" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>[&#39;OSHP-X-Frame-Options&#39;]</pre>
+                        </section>
+                    </div>
+
+                <dl><dt>Solutions</dt><dd>Implement X-Frame-Options or Content Security Policy (CSP) frame-ancestors directive.</dd></dl>
+                <h5>References</h5>
+                <ul>
+                    <li><a href="https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/11-Client-side_Testing/09-Testing_for_Clickjacking">OWASP: Clickjacking</a></li>
+                    <li><a href="https://www.keycdn.com/support/prevent-clickjacking">KeyCDN: Preventing Clickjacking</a></li>
+                </ul>
+                <br />
+                <hr>
+                <h3 id="vuln_type_16">MIME Type Confusion</h3>
+                <dl>
+                    <dt>Description</dt>
+                    <dd>MIME type confusion can occur when a browser interprets files as a different type than intended, which could lead to security vulnerabilities like cross-site scripting (XSS).</dd>
+                </dl>
+
+                    <div class="tab-container">
+                        <h4><span class="severity severity-low"></span> Vulnerability found in /</h4>
+                        <nav class="tab-nav">
+                            <a href="#tab-vuln-16-0-1" class="tab-link active">Description</a>
+                            <a href="#tab-vuln-16-0-2" class="tab-link">HTTP Request</a>
+                            <a href="#tab-vuln-16-0-4" class="tab-link">cURL command line</a>
+                            <a href="#tab-vuln-16-0-5" class="tab-link">WSTG Code</a>
+                        </nav>
+                        <section id="tab-vuln-16-0-1" class="tab-content" style="min-height: 124px;">
+                            <pre>X-Content-Type-Options is not set</pre>
+                        </section>
+                        <section id="tab-vuln-16-0-2" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre style="white-space: normal;">
+                                    GET / HTTP/1.1
+                                    <br>
+                                    host: 127.0.0.1
+                                    <br>
+                                    connection: keep-alive
+                                    <br>
+                                    user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0
+                                    <br>
+                                    accept-language: en-US
+                                    <br>
+                                    accept-encoding: gzip, deflate, br
+                                    <br>
+                                    accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+                                    <br>
+                            </pre>
+                        </section>
+                        <section id="tab-vuln-16-0-4" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>curl &#34;http://127.0.0.1/&#34;</pre>
+                        </section>
+                        <section id="tab-vuln-16-0-5" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>[&#39;OSHP-X-Content-Type-Options&#39;]</pre>
+                        </section>
+                    </div>
+
+                <dl><dt>Solutions</dt><dd>Implement X-Content-Type-Options to prevent MIME type sniffing.</dd></dl>
+                <h5>References</h5>
+                <ul>
+                    <li><a href="https://owasp.org/www-community/attacks/MIME_sniffing">OWASP: MIME Sniffing</a></li>
+                    <li><a href="https://www.keycdn.com/support/preventing-mime-type-sniffing">KeyCDN: Preventing MIME Type Sniffing</a></li>
+                </ul>
+                <br />
+                <hr>
+                <h3 id="vuln_type_18">Unencrypted Channels</h3>
+                <dl>
+                    <dt>Description</dt>
+                    <dd>Sensitive data must be protected when it is transmitted through the network.</dd>
+                </dl>
+
+                    <div class="tab-container">
+                        <h4><span class="severity severity-low"></span> Vulnerability found in /</h4>
+                        <nav class="tab-nav">
+                            <a href="#tab-vuln-18-0-1" class="tab-link active">Description</a>
+                            <a href="#tab-vuln-18-0-2" class="tab-link">HTTP Request</a>
+                            <a href="#tab-vuln-18-0-4" class="tab-link">cURL command line</a>
+                            <a href="#tab-vuln-18-0-5" class="tab-link">WSTG Code</a>
+                        </nav>
+                        <section id="tab-vuln-18-0-1" class="tab-content" style="min-height: 124px;">
+                            <pre>No HTTPS redirection for this host. All HTTP requests are served in clear text.</pre>
+                        </section>
+                        <section id="tab-vuln-18-0-2" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre style="white-space: normal;">
+                                    GET / HTTP/1.1
+                                    <br>
+                                    host: 127.0.0.1
+                                    <br>
+                                    connection: keep-alive
+                                    <br>
+                                    user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0
+                                    <br>
+                                    accept-language: en-US
+                                    <br>
+                                    accept-encoding: gzip, deflate, br
+                                    <br>
+                                    accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+                                    <br>
+                            </pre>
+                        </section>
+                        <section id="tab-vuln-18-0-4" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>curl &#34;http://127.0.0.1/&#34;</pre>
+                        </section>
+                        <section id="tab-vuln-18-0-5" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>[&#39;WSTG-CRYP-03&#39;]</pre>
+                        </section>
+                    </div>
+                    <div class="tab-container">
+                        <h4><span class="severity severity-medium"></span> Vulnerability found in /phpmyadmin/</h4>
+                        <nav class="tab-nav">
+                            <a href="#tab-vuln-18-1-1" class="tab-link active">Description</a>
+                            <a href="#tab-vuln-18-1-2" class="tab-link">HTTP Request</a>
+                            <a href="#tab-vuln-18-1-4" class="tab-link">cURL command line</a>
+                            <a href="#tab-vuln-18-1-5" class="tab-link">WSTG Code</a>
+                        </nav>
+                        <section id="tab-vuln-18-1-1" class="tab-content" style="min-height: 124px;">
+                            <pre>Sensitive data (cookie in the response) was sent over an unencrypted HTTP connection to http://127.0.0.1/phpmyadmin/. The server did not enforce HTTPS.</pre>
+                        </section>
+                        <section id="tab-vuln-18-1-2" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre style="white-space: normal;">
+                                    GET /phpmyadmin/ HTTP/1.1
+                                    <br>
+                                    host: 127.0.0.1
+                                    <br>
+                                    connection: keep-alive
+                                    <br>
+                                    user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0
+                                    <br>
+                                    accept-language: en-US
+                                    <br>
+                                    accept-encoding: gzip, deflate, br
+                                    <br>
+                                    accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+                                    <br>
+                            </pre>
+                        </section>
+                        <section id="tab-vuln-18-1-4" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>curl &#34;http://127.0.0.1/phpmyadmin/&#34;</pre>
+                        </section>
+                        <section id="tab-vuln-18-1-5" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>[&#39;WSTG-CRYP-03&#39;]</pre>
+                        </section>
+                    </div>
+                    <div class="tab-container">
+                        <h4><span class="severity severity-medium"></span> Vulnerability found in /phpmyadmin/js/messages.php</h4>
+                        <nav class="tab-nav">
+                            <a href="#tab-vuln-18-2-1" class="tab-link active">Description</a>
+                            <a href="#tab-vuln-18-2-2" class="tab-link">HTTP Request</a>
+                            <a href="#tab-vuln-18-2-4" class="tab-link">cURL command line</a>
+                            <a href="#tab-vuln-18-2-5" class="tab-link">WSTG Code</a>
+                        </nav>
+                        <section id="tab-vuln-18-2-1" class="tab-content" style="min-height: 124px;">
+                            <pre>Sensitive data (GET parameters) was sent over an unencrypted HTTP connection to http://127.0.0.1/phpmyadmin/js/messages.php?l=en&amp;v=5.2.1&amp;lang=en. The server did not enforce HTTPS.</pre>
+                        </section>
+                        <section id="tab-vuln-18-2-2" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre style="white-space: normal;">
+                                    GET /phpmyadmin/js/messages.php?l=en&amp;v=5.2.1&amp;lang=en HTTP/1.1
+                                    <br>
+                                    host: 127.0.0.1
+                                    <br>
+                                    connection: keep-alive
+                                    <br>
+                                    user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0
+                                    <br>
+                                    accept-language: en-US
+                                    <br>
+                                    accept-encoding: gzip, deflate, br
+                                    <br>
+                                    accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+                                    <br>
+                                    cookie: phpMyAdmin=t58ul0qg9pfdlpunv77gfdsuge; pma_lang=en
+                                    <br>
+                            </pre>
+                        </section>
+                        <section id="tab-vuln-18-2-4" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>curl &#34;http://127.0.0.1/phpmyadmin/js/messages.php?l=en&amp;v=5.2.1&amp;lang=en&#34;</pre>
+                        </section>
+                        <section id="tab-vuln-18-2-5" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>[&#39;WSTG-CRYP-03&#39;]</pre>
+                        </section>
+                    </div>
+                    <div class="tab-container">
+                        <h4><span class="severity severity-low"></span> Vulnerability found in /phpmyadmin/url.php</h4>
+                        <nav class="tab-nav">
+                            <a href="#tab-vuln-18-3-1" class="tab-link active">Description</a>
+                            <a href="#tab-vuln-18-3-2" class="tab-link">HTTP Request</a>
+                            <a href="#tab-vuln-18-3-4" class="tab-link">cURL command line</a>
+                            <a href="#tab-vuln-18-3-5" class="tab-link">WSTG Code</a>
+                        </nav>
+                        <section id="tab-vuln-18-3-1" class="tab-content" style="min-height: 124px;">
+                            <pre>Sensitive data (cookie in the response) was sent over an unencrypted HTTP connection to http://127.0.0.1/phpmyadmin/url.php. The server redirected, but not to an HTTPS URL, leaving the initial data and the redirection exposed.</pre>
+                        </section>
+                        <section id="tab-vuln-18-3-2" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre style="white-space: normal;">
+                                    GET /phpmyadmin/url.php HTTP/1.1
+                                    <br>
+                                    host: 127.0.0.1
+                                    <br>
+                                    connection: keep-alive
+                                    <br>
+                                    user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0
+                                    <br>
+                                    accept-language: en-US
+                                    <br>
+                                    accept-encoding: gzip, deflate, br
+                                    <br>
+                                    accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+                                    <br>
+                                    cookie: phpMyAdmin=t58ul0qg9pfdlpunv77gfdsuge; pma_lang=en
+                                    <br>
+                            </pre>
+                        </section>
+                        <section id="tab-vuln-18-3-4" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>curl &#34;http://127.0.0.1/phpmyadmin/url.php&#34;</pre>
+                        </section>
+                        <section id="tab-vuln-18-3-5" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>[&#39;WSTG-CRYP-03&#39;]</pre>
+                        </section>
+                    </div>
+
+                <dl><dt>Solutions</dt><dd>Use HTTPS for the whole web site and redirect any HTTP requests to HTTPS.</dd></dl>
+                <h5>References</h5>
+                <ul>
+                    <li><a href="https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/09-Testing_for_Weak_Cryptography/03-Testing_for_Sensitive_Information_Sent_via_Unencrypted_Channels">Testing for Sensitive Information Sent via Unencrypted Channels</a></li>
+                    <li><a href="https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/09-Testing_for_Weak_Cryptography/01-Testing_for_Weak_Transport_Layer_Security">Testing for Weak Transport Layer Security</a></li>
+                </ul>
+                <br />
+                <hr>
+                <h3 id="vuln_type_20">Information Disclosure - Full Path</h3>
+                <dl>
+                    <dt>Description</dt>
+                    <dd>The application response discloses full system paths. This information can help attackers understand the server environment, directory structure, and operating system, which can facilitate further attacks.</dd>
+                </dl>
+
+                    <div class="tab-container">
+                        <h4><span class="severity severity-low"></span> Vulnerability found in /dashboard/faq.html</h4>
+                        <nav class="tab-nav">
+                            <a href="#tab-vuln-20-0-1" class="tab-link active">Description</a>
+                            <a href="#tab-vuln-20-0-2" class="tab-link">HTTP Request</a>
+                            <a href="#tab-vuln-20-0-4" class="tab-link">cURL command line</a>
+                            <a href="#tab-vuln-20-0-5" class="tab-link">WSTG Code</a>
+                        </nav>
+                        <section id="tab-vuln-20-0-1" class="tab-content" style="min-height: 124px;">
+                            <pre>Response contains potential system path: C:\program files</pre>
+                        </section>
+                        <section id="tab-vuln-20-0-2" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre style="white-space: normal;">
+                                    GET /dashboard/faq.html HTTP/1.1
+                                    <br>
+                                    host: 127.0.0.1
+                                    <br>
+                                    connection: keep-alive
+                                    <br>
+                                    user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0
+                                    <br>
+                                    accept-language: en-US
+                                    <br>
+                                    accept-encoding: gzip, deflate, br
+                                    <br>
+                                    accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+                                    <br>
+                            </pre>
+                        </section>
+                        <section id="tab-vuln-20-0-4" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>curl &#34;http://127.0.0.1/dashboard/faq.html&#34;</pre>
+                        </section>
+                        <section id="tab-vuln-20-0-5" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>[&#39;WSTG-ERRH-01&#39;]</pre>
+                        </section>
+                    </div>
+                    <div class="tab-container">
+                        <h4><span class="severity severity-low"></span> Vulnerability found in /dashboard/phpinfo.php</h4>
+                        <nav class="tab-nav">
+                            <a href="#tab-vuln-20-1-1" class="tab-link active">Description</a>
+                            <a href="#tab-vuln-20-1-2" class="tab-link">HTTP Request</a>
+                            <a href="#tab-vuln-20-1-4" class="tab-link">cURL command line</a>
+                            <a href="#tab-vuln-20-1-5" class="tab-link">WSTG Code</a>
+                        </nav>
+                        <section id="tab-vuln-20-1-1" class="tab-content" style="min-height: 124px;">
+                            <pre>Response contains potential system path: C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program</pre>
+                        </section>
+                        <section id="tab-vuln-20-1-2" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre style="white-space: normal;">
+                                    GET /dashboard/phpinfo.php HTTP/1.1
+                                    <br>
+                                    host: 127.0.0.1
+                                    <br>
+                                    connection: keep-alive
+                                    <br>
+                                    user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0
+                                    <br>
+                                    accept-language: en-US
+                                    <br>
+                                    accept-encoding: gzip, deflate, br
+                                    <br>
+                                    accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+                                    <br>
+                            </pre>
+                        </section>
+                        <section id="tab-vuln-20-1-4" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>curl &#34;http://127.0.0.1/dashboard/phpinfo.php&#34;</pre>
+                        </section>
+                        <section id="tab-vuln-20-1-5" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>[&#39;WSTG-ERRH-01&#39;]</pre>
+                        </section>
+                    </div>
+                    <div class="tab-container">
+                        <h4><span class="severity severity-low"></span> Vulnerability found in /dashboard/phpinfo.php</h4>
+                        <nav class="tab-nav">
+                            <a href="#tab-vuln-20-2-1" class="tab-link active">Description</a>
+                            <a href="#tab-vuln-20-2-2" class="tab-link">HTTP Request</a>
+                            <a href="#tab-vuln-20-2-4" class="tab-link">cURL command line</a>
+                            <a href="#tab-vuln-20-2-5" class="tab-link">WSTG Code</a>
+                        </nav>
+                        <section id="tab-vuln-20-2-1" class="tab-content" style="min-height: 124px;">
+                            <pre>Response contains potential system path: C:\Program Files\PuTTY\;C:\Program</pre>
+                        </section>
+                        <section id="tab-vuln-20-2-2" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre style="white-space: normal;">
+                                    GET /dashboard/phpinfo.php HTTP/1.1
+                                    <br>
+                                    host: 127.0.0.1
+                                    <br>
+                                    connection: keep-alive
+                                    <br>
+                                    user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0
+                                    <br>
+                                    accept-language: en-US
+                                    <br>
+                                    accept-encoding: gzip, deflate, br
+                                    <br>
+                                    accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+                                    <br>
+                            </pre>
+                        </section>
+                        <section id="tab-vuln-20-2-4" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>curl &#34;http://127.0.0.1/dashboard/phpinfo.php&#34;</pre>
+                        </section>
+                        <section id="tab-vuln-20-2-5" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>[&#39;WSTG-ERRH-01&#39;]</pre>
+                        </section>
+                    </div>
+                    <div class="tab-container">
+                        <h4><span class="severity severity-low"></span> Vulnerability found in /dashboard/phpinfo.php</h4>
+                        <nav class="tab-nav">
+                            <a href="#tab-vuln-20-3-1" class="tab-link active">Description</a>
+                            <a href="#tab-vuln-20-3-2" class="tab-link">HTTP Request</a>
+                            <a href="#tab-vuln-20-3-4" class="tab-link">cURL command line</a>
+                            <a href="#tab-vuln-20-3-5" class="tab-link">WSTG Code</a>
+                        </nav>
+                        <section id="tab-vuln-20-3-1" class="tab-content" style="min-height: 124px;">
+                            <pre>Response contains potential system path: C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Users\olowo\AppData\Local\Programs\Python\Python314\Scripts\;C:\Users\olowo\AppData\Local\Programs\Python\Python314\;C:\Users\olowo\AppData\Local\Microsoft\WindowsApps;C:\Users\olowo\AppData\Local\GitHubDesktop\bin;C:\Users\olowo\AppData\Roaming\npm;C:\Users\olowo\AppData\Local\Programs\Microsoft</pre>
+                        </section>
+                        <section id="tab-vuln-20-3-2" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre style="white-space: normal;">
+                                    GET /dashboard/phpinfo.php HTTP/1.1
+                                    <br>
+                                    host: 127.0.0.1
+                                    <br>
+                                    connection: keep-alive
+                                    <br>
+                                    user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0
+                                    <br>
+                                    accept-language: en-US
+                                    <br>
+                                    accept-encoding: gzip, deflate, br
+                                    <br>
+                                    accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+                                    <br>
+                            </pre>
+                        </section>
+                        <section id="tab-vuln-20-3-4" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>curl &#34;http://127.0.0.1/dashboard/phpinfo.php&#34;</pre>
+                        </section>
+                        <section id="tab-vuln-20-3-5" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>[&#39;WSTG-ERRH-01&#39;]</pre>
+                        </section>
+                    </div>
+                    <div class="tab-container">
+                        <h4><span class="severity severity-low"></span> Vulnerability found in /dashboard/phpinfo.php</h4>
+                        <nav class="tab-nav">
+                            <a href="#tab-vuln-20-4-1" class="tab-link active">Description</a>
+                            <a href="#tab-vuln-20-4-2" class="tab-link">HTTP Request</a>
+                            <a href="#tab-vuln-20-4-4" class="tab-link">cURL command line</a>
+                            <a href="#tab-vuln-20-4-5" class="tab-link">WSTG Code</a>
+                        </nav>
+                        <section id="tab-vuln-20-4-1" class="tab-content" style="min-height: 124px;">
+                            <pre>Response contains potential system path: C:\Users\olowo\AppData\Local\Python\bin;C:\Program</pre>
+                        </section>
+                        <section id="tab-vuln-20-4-2" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre style="white-space: normal;">
+                                    GET /dashboard/phpinfo.php HTTP/1.1
+                                    <br>
+                                    host: 127.0.0.1
+                                    <br>
+                                    connection: keep-alive
+                                    <br>
+                                    user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0
+                                    <br>
+                                    accept-language: en-US
+                                    <br>
+                                    accept-encoding: gzip, deflate, br
+                                    <br>
+                                    accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+                                    <br>
+                            </pre>
+                        </section>
+                        <section id="tab-vuln-20-4-4" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>curl &#34;http://127.0.0.1/dashboard/phpinfo.php&#34;</pre>
+                        </section>
+                        <section id="tab-vuln-20-4-5" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>[&#39;WSTG-ERRH-01&#39;]</pre>
+                        </section>
+                    </div>
+                    <div class="tab-container">
+                        <h4><span class="severity severity-low"></span> Vulnerability found in /dashboard/phpinfo.php</h4>
+                        <nav class="tab-nav">
+                            <a href="#tab-vuln-20-5-1" class="tab-link active">Description</a>
+                            <a href="#tab-vuln-20-5-2" class="tab-link">HTTP Request</a>
+                            <a href="#tab-vuln-20-5-4" class="tab-link">cURL command line</a>
+                            <a href="#tab-vuln-20-5-5" class="tab-link">WSTG Code</a>
+                        </nav>
+                        <section id="tab-vuln-20-5-1" class="tab-content" style="min-height: 124px;">
+                            <pre>Response contains potential system path: C:\windows</pre>
+                        </section>
+                        <section id="tab-vuln-20-5-2" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre style="white-space: normal;">
+                                    GET /dashboard/phpinfo.php HTTP/1.1
+                                    <br>
+                                    host: 127.0.0.1
+                                    <br>
+                                    connection: keep-alive
+                                    <br>
+                                    user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0
+                                    <br>
+                                    accept-language: en-US
+                                    <br>
+                                    accept-encoding: gzip, deflate, br
+                                    <br>
+                                    accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+                                    <br>
+                            </pre>
+                        </section>
+                        <section id="tab-vuln-20-5-4" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>curl &#34;http://127.0.0.1/dashboard/phpinfo.php&#34;</pre>
+                        </section>
+                        <section id="tab-vuln-20-5-5" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>[&#39;WSTG-ERRH-01&#39;]</pre>
+                        </section>
+                    </div>
+                    <div class="tab-container">
+                        <h4><span class="severity severity-low"></span> Vulnerability found in /dashboard/phpinfo.php</h4>
+                        <nav class="tab-nav">
+                            <a href="#tab-vuln-20-6-1" class="tab-link active">Description</a>
+                            <a href="#tab-vuln-20-6-2" class="tab-link">HTTP Request</a>
+                            <a href="#tab-vuln-20-6-4" class="tab-link">cURL command line</a>
+                            <a href="#tab-vuln-20-6-5" class="tab-link">WSTG Code</a>
+                        </nav>
+                        <section id="tab-vuln-20-6-1" class="tab-content" style="min-height: 124px;">
+                            <pre>Response contains potential system path: C:\windows\system32\cmd.exe</pre>
+                        </section>
+                        <section id="tab-vuln-20-6-2" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre style="white-space: normal;">
+                                    GET /dashboard/phpinfo.php HTTP/1.1
+                                    <br>
+                                    host: 127.0.0.1
+                                    <br>
+                                    connection: keep-alive
+                                    <br>
+                                    user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0
+                                    <br>
+                                    accept-language: en-US
+                                    <br>
+                                    accept-encoding: gzip, deflate, br
+                                    <br>
+                                    accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+                                    <br>
+                            </pre>
+                        </section>
+                        <section id="tab-vuln-20-6-4" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>curl &#34;http://127.0.0.1/dashboard/phpinfo.php&#34;</pre>
+                        </section>
+                        <section id="tab-vuln-20-6-5" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>[&#39;WSTG-ERRH-01&#39;]</pre>
+                        </section>
+                    </div>
+                    <div class="tab-container">
+                        <h4><span class="severity severity-low"></span> Vulnerability found in /dashboard/phpinfo.php</h4>
+                        <nav class="tab-nav">
+                            <a href="#tab-vuln-20-7-1" class="tab-link active">Description</a>
+                            <a href="#tab-vuln-20-7-2" class="tab-link">HTTP Request</a>
+                            <a href="#tab-vuln-20-7-4" class="tab-link">cURL command line</a>
+                            <a href="#tab-vuln-20-7-5" class="tab-link">WSTG Code</a>
+                        </nav>
+                        <section id="tab-vuln-20-7-1" class="tab-content" style="min-height: 124px;">
+                            <pre>Response contains potential system path: C:\ProgramData</pre>
+                        </section>
+                        <section id="tab-vuln-20-7-2" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre style="white-space: normal;">
+                                    GET /dashboard/phpinfo.php HTTP/1.1
+                                    <br>
+                                    host: 127.0.0.1
+                                    <br>
+                                    connection: keep-alive
+                                    <br>
+                                    user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0
+                                    <br>
+                                    accept-language: en-US
+                                    <br>
+                                    accept-encoding: gzip, deflate, br
+                                    <br>
+                                    accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+                                    <br>
+                            </pre>
+                        </section>
+                        <section id="tab-vuln-20-7-4" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>curl &#34;http://127.0.0.1/dashboard/phpinfo.php&#34;</pre>
+                        </section>
+                        <section id="tab-vuln-20-7-5" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>[&#39;WSTG-ERRH-01&#39;]</pre>
+                        </section>
+                    </div>
+                    <div class="tab-container">
+                        <h4><span class="severity severity-low"></span> Vulnerability found in /dashboard/phpinfo.php</h4>
+                        <nav class="tab-nav">
+                            <a href="#tab-vuln-20-8-1" class="tab-link active">Description</a>
+                            <a href="#tab-vuln-20-8-2" class="tab-link">HTTP Request</a>
+                            <a href="#tab-vuln-20-8-4" class="tab-link">cURL command line</a>
+                            <a href="#tab-vuln-20-8-5" class="tab-link">WSTG Code</a>
+                        </nav>
+                        <section id="tab-vuln-20-8-1" class="tab-content" style="min-height: 124px;">
+                            <pre>Response contains potential system path: C:\Users\olowo\AppData\Roaming</pre>
+                        </section>
+                        <section id="tab-vuln-20-8-2" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre style="white-space: normal;">
+                                    GET /dashboard/phpinfo.php HTTP/1.1
+                                    <br>
+                                    host: 127.0.0.1
+                                    <br>
+                                    connection: keep-alive
+                                    <br>
+                                    user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0
+                                    <br>
+                                    accept-language: en-US
+                                    <br>
+                                    accept-encoding: gzip, deflate, br
+                                    <br>
+                                    accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+                                    <br>
+                            </pre>
+                        </section>
+                        <section id="tab-vuln-20-8-4" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>curl &#34;http://127.0.0.1/dashboard/phpinfo.php&#34;</pre>
+                        </section>
+                        <section id="tab-vuln-20-8-5" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>[&#39;WSTG-ERRH-01&#39;]</pre>
+                        </section>
+                    </div>
+                    <div class="tab-container">
+                        <h4><span class="severity severity-low"></span> Vulnerability found in /dashboard/phpinfo.php</h4>
+                        <nav class="tab-nav">
+                            <a href="#tab-vuln-20-9-1" class="tab-link active">Description</a>
+                            <a href="#tab-vuln-20-9-2" class="tab-link">HTTP Request</a>
+                            <a href="#tab-vuln-20-9-4" class="tab-link">cURL command line</a>
+                            <a href="#tab-vuln-20-9-5" class="tab-link">WSTG Code</a>
+                        </nav>
+                        <section id="tab-vuln-20-9-1" class="tab-content" style="min-height: 124px;">
+                            <pre>Response contains potential system path: C:\ProgramData\chocolatey</pre>
+                        </section>
+                        <section id="tab-vuln-20-9-2" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre style="white-space: normal;">
+                                    GET /dashboard/phpinfo.php HTTP/1.1
+                                    <br>
+                                    host: 127.0.0.1
+                                    <br>
+                                    connection: keep-alive
+                                    <br>
+                                    user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0
+                                    <br>
+                                    accept-language: en-US
+                                    <br>
+                                    accept-encoding: gzip, deflate, br
+                                    <br>
+                                    accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+                                    <br>
+                            </pre>
+                        </section>
+                        <section id="tab-vuln-20-9-4" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>curl &#34;http://127.0.0.1/dashboard/phpinfo.php&#34;</pre>
+                        </section>
+                        <section id="tab-vuln-20-9-5" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>[&#39;WSTG-ERRH-01&#39;]</pre>
+                        </section>
+                    </div>
+                    <div class="tab-container">
+                        <h4><span class="severity severity-low"></span> Vulnerability found in /dashboard/phpinfo.php</h4>
+                        <nav class="tab-nav">
+                            <a href="#tab-vuln-20-10-1" class="tab-link active">Description</a>
+                            <a href="#tab-vuln-20-10-2" class="tab-link">HTTP Request</a>
+                            <a href="#tab-vuln-20-10-4" class="tab-link">cURL command line</a>
+                            <a href="#tab-vuln-20-10-5" class="tab-link">WSTG Code</a>
+                        </nav>
+                        <section id="tab-vuln-20-10-1" class="tab-content" style="min-height: 124px;">
+                            <pre>Response contains potential system path: C:\Program Files\Common</pre>
+                        </section>
+                        <section id="tab-vuln-20-10-2" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre style="white-space: normal;">
+                                    GET /dashboard/phpinfo.php HTTP/1.1
+                                    <br>
+                                    host: 127.0.0.1
+                                    <br>
+                                    connection: keep-alive
+                                    <br>
+                                    user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0
+                                    <br>
+                                    accept-language: en-US
+                                    <br>
+                                    accept-encoding: gzip, deflate, br
+                                    <br>
+                                    accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+                                    <br>
+                            </pre>
+                        </section>
+                        <section id="tab-vuln-20-10-4" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>curl &#34;http://127.0.0.1/dashboard/phpinfo.php&#34;</pre>
+                        </section>
+                        <section id="tab-vuln-20-10-5" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>[&#39;WSTG-ERRH-01&#39;]</pre>
+                        </section>
+                    </div>
+                    <div class="tab-container">
+                        <h4><span class="severity severity-low"></span> Vulnerability found in /dashboard/phpinfo.php</h4>
+                        <nav class="tab-nav">
+                            <a href="#tab-vuln-20-11-1" class="tab-link active">Description</a>
+                            <a href="#tab-vuln-20-11-2" class="tab-link">HTTP Request</a>
+                            <a href="#tab-vuln-20-11-4" class="tab-link">cURL command line</a>
+                            <a href="#tab-vuln-20-11-5" class="tab-link">WSTG Code</a>
+                        </nav>
+                        <section id="tab-vuln-20-11-1" class="tab-content" style="min-height: 124px;">
+                            <pre>Response contains potential system path: C:\Program Files</pre>
+                        </section>
+                        <section id="tab-vuln-20-11-2" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre style="white-space: normal;">
+                                    GET /dashboard/phpinfo.php HTTP/1.1
+                                    <br>
+                                    host: 127.0.0.1
+                                    <br>
+                                    connection: keep-alive
+                                    <br>
+                                    user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0
+                                    <br>
+                                    accept-language: en-US
+                                    <br>
+                                    accept-encoding: gzip, deflate, br
+                                    <br>
+                                    accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+                                    <br>
+                            </pre>
+                        </section>
+                        <section id="tab-vuln-20-11-4" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>curl &#34;http://127.0.0.1/dashboard/phpinfo.php&#34;</pre>
+                        </section>
+                        <section id="tab-vuln-20-11-5" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>[&#39;WSTG-ERRH-01&#39;]</pre>
+                        </section>
+                    </div>
+                    <div class="tab-container">
+                        <h4><span class="severity severity-low"></span> Vulnerability found in /dashboard/phpinfo.php</h4>
+                        <nav class="tab-nav">
+                            <a href="#tab-vuln-20-12-1" class="tab-link active">Description</a>
+                            <a href="#tab-vuln-20-12-2" class="tab-link">HTTP Request</a>
+                            <a href="#tab-vuln-20-12-4" class="tab-link">cURL command line</a>
+                            <a href="#tab-vuln-20-12-5" class="tab-link">WSTG Code</a>
+                        </nav>
+                        <section id="tab-vuln-20-12-1" class="tab-content" style="min-height: 124px;">
+                            <pre>Response contains potential system path: C:\Windows\System32\Drivers\DriverData</pre>
+                        </section>
+                        <section id="tab-vuln-20-12-2" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre style="white-space: normal;">
+                                    GET /dashboard/phpinfo.php HTTP/1.1
+                                    <br>
+                                    host: 127.0.0.1
+                                    <br>
+                                    connection: keep-alive
+                                    <br>
+                                    user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0
+                                    <br>
+                                    accept-language: en-US
+                                    <br>
+                                    accept-encoding: gzip, deflate, br
+                                    <br>
+                                    accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+                                    <br>
+                            </pre>
+                        </section>
+                        <section id="tab-vuln-20-12-4" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>curl &#34;http://127.0.0.1/dashboard/phpinfo.php&#34;</pre>
+                        </section>
+                        <section id="tab-vuln-20-12-5" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>[&#39;WSTG-ERRH-01&#39;]</pre>
+                        </section>
+                    </div>
+                    <div class="tab-container">
+                        <h4><span class="severity severity-low"></span> Vulnerability found in /dashboard/phpinfo.php</h4>
+                        <nav class="tab-nav">
+                            <a href="#tab-vuln-20-13-1" class="tab-link active">Description</a>
+                            <a href="#tab-vuln-20-13-2" class="tab-link">HTTP Request</a>
+                            <a href="#tab-vuln-20-13-4" class="tab-link">cURL command line</a>
+                            <a href="#tab-vuln-20-13-5" class="tab-link">WSTG Code</a>
+                        </nav>
+                        <section id="tab-vuln-20-13-1" class="tab-content" style="min-height: 124px;">
+                            <pre>Response contains potential system path: C:\Users\olowo\AppData\Local</pre>
+                        </section>
+                        <section id="tab-vuln-20-13-2" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre style="white-space: normal;">
+                                    GET /dashboard/phpinfo.php HTTP/1.1
+                                    <br>
+                                    host: 127.0.0.1
+                                    <br>
+                                    connection: keep-alive
+                                    <br>
+                                    user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0
+                                    <br>
+                                    accept-language: en-US
+                                    <br>
+                                    accept-encoding: gzip, deflate, br
+                                    <br>
+                                    accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+                                    <br>
+                            </pre>
+                        </section>
+                        <section id="tab-vuln-20-13-4" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>curl &#34;http://127.0.0.1/dashboard/phpinfo.php&#34;</pre>
+                        </section>
+                        <section id="tab-vuln-20-13-5" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>[&#39;WSTG-ERRH-01&#39;]</pre>
+                        </section>
+                    </div>
+                    <div class="tab-container">
+                        <h4><span class="severity severity-low"></span> Vulnerability found in /dashboard/phpinfo.php</h4>
+                        <nav class="tab-nav">
+                            <a href="#tab-vuln-20-14-1" class="tab-link active">Description</a>
+                            <a href="#tab-vuln-20-14-2" class="tab-link">HTTP Request</a>
+                            <a href="#tab-vuln-20-14-4" class="tab-link">cURL command line</a>
+                            <a href="#tab-vuln-20-14-5" class="tab-link">WSTG Code</a>
+                        </nav>
+                        <section id="tab-vuln-20-14-1" class="tab-content" style="min-height: 124px;">
+                            <pre>Response contains potential system path: C:\Users\olowo\OneDrive</pre>
+                        </section>
+                        <section id="tab-vuln-20-14-2" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre style="white-space: normal;">
+                                    GET /dashboard/phpinfo.php HTTP/1.1
+                                    <br>
+                                    host: 127.0.0.1
+                                    <br>
+                                    connection: keep-alive
+                                    <br>
+                                    user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0
+                                    <br>
+                                    accept-language: en-US
+                                    <br>
+                                    accept-encoding: gzip, deflate, br
+                                    <br>
+                                    accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+                                    <br>
+                            </pre>
+                        </section>
+                        <section id="tab-vuln-20-14-4" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>curl &#34;http://127.0.0.1/dashboard/phpinfo.php&#34;</pre>
+                        </section>
+                        <section id="tab-vuln-20-14-5" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>[&#39;WSTG-ERRH-01&#39;]</pre>
+                        </section>
+                    </div>
+                    <div class="tab-container">
+                        <h4><span class="severity severity-low"></span> Vulnerability found in /dashboard/phpinfo.php</h4>
+                        <nav class="tab-nav">
+                            <a href="#tab-vuln-20-15-1" class="tab-link active">Description</a>
+                            <a href="#tab-vuln-20-15-2" class="tab-link">HTTP Request</a>
+                            <a href="#tab-vuln-20-15-4" class="tab-link">cURL command line</a>
+                            <a href="#tab-vuln-20-15-5" class="tab-link">WSTG Code</a>
+                        </nav>
+                        <section id="tab-vuln-20-15-1" class="tab-content" style="min-height: 124px;">
+                            <pre>Response contains potential system path: C:\windows\system32\WindowsPowerShell\v1.0\Modules</pre>
+                        </section>
+                        <section id="tab-vuln-20-15-2" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre style="white-space: normal;">
+                                    GET /dashboard/phpinfo.php HTTP/1.1
+                                    <br>
+                                    host: 127.0.0.1
+                                    <br>
+                                    connection: keep-alive
+                                    <br>
+                                    user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0
+                                    <br>
+                                    accept-language: en-US
+                                    <br>
+                                    accept-encoding: gzip, deflate, br
+                                    <br>
+                                    accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+                                    <br>
+                            </pre>
+                        </section>
+                        <section id="tab-vuln-20-15-4" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>curl &#34;http://127.0.0.1/dashboard/phpinfo.php&#34;</pre>
+                        </section>
+                        <section id="tab-vuln-20-15-5" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>[&#39;WSTG-ERRH-01&#39;]</pre>
+                        </section>
+                    </div>
+                    <div class="tab-container">
+                        <h4><span class="severity severity-low"></span> Vulnerability found in /dashboard/phpinfo.php</h4>
+                        <nav class="tab-nav">
+                            <a href="#tab-vuln-20-16-1" class="tab-link active">Description</a>
+                            <a href="#tab-vuln-20-16-2" class="tab-link">HTTP Request</a>
+                            <a href="#tab-vuln-20-16-4" class="tab-link">cURL command line</a>
+                            <a href="#tab-vuln-20-16-5" class="tab-link">WSTG Code</a>
+                        </nav>
+                        <section id="tab-vuln-20-16-1" class="tab-content" style="min-height: 124px;">
+                            <pre>Response contains potential system path: C:\Program Files\Cisco</pre>
+                        </section>
+                        <section id="tab-vuln-20-16-2" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre style="white-space: normal;">
+                                    GET /dashboard/phpinfo.php HTTP/1.1
+                                    <br>
+                                    host: 127.0.0.1
+                                    <br>
+                                    connection: keep-alive
+                                    <br>
+                                    user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0
+                                    <br>
+                                    accept-language: en-US
+                                    <br>
+                                    accept-encoding: gzip, deflate, br
+                                    <br>
+                                    accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+                                    <br>
+                            </pre>
+                        </section>
+                        <section id="tab-vuln-20-16-4" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>curl &#34;http://127.0.0.1/dashboard/phpinfo.php&#34;</pre>
+                        </section>
+                        <section id="tab-vuln-20-16-5" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>[&#39;WSTG-ERRH-01&#39;]</pre>
+                        </section>
+                    </div>
+                    <div class="tab-container">
+                        <h4><span class="severity severity-low"></span> Vulnerability found in /dashboard/phpinfo.php</h4>
+                        <nav class="tab-nav">
+                            <a href="#tab-vuln-20-17-1" class="tab-link active">Description</a>
+                            <a href="#tab-vuln-20-17-2" class="tab-link">HTTP Request</a>
+                            <a href="#tab-vuln-20-17-4" class="tab-link">cURL command line</a>
+                            <a href="#tab-vuln-20-17-5" class="tab-link">WSTG Code</a>
+                        </nav>
+                        <section id="tab-vuln-20-17-1" class="tab-content" style="min-height: 124px;">
+                            <pre>Response contains potential system path: C:\Users\Public</pre>
+                        </section>
+                        <section id="tab-vuln-20-17-2" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre style="white-space: normal;">
+                                    GET /dashboard/phpinfo.php HTTP/1.1
+                                    <br>
+                                    host: 127.0.0.1
+                                    <br>
+                                    connection: keep-alive
+                                    <br>
+                                    user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0
+                                    <br>
+                                    accept-language: en-US
+                                    <br>
+                                    accept-encoding: gzip, deflate, br
+                                    <br>
+                                    accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+                                    <br>
+                            </pre>
+                        </section>
+                        <section id="tab-vuln-20-17-4" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>curl &#34;http://127.0.0.1/dashboard/phpinfo.php&#34;</pre>
+                        </section>
+                        <section id="tab-vuln-20-17-5" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>[&#39;WSTG-ERRH-01&#39;]</pre>
+                        </section>
+                    </div>
+                    <div class="tab-container">
+                        <h4><span class="severity severity-low"></span> Vulnerability found in /dashboard/phpinfo.php</h4>
+                        <nav class="tab-nav">
+                            <a href="#tab-vuln-20-18-1" class="tab-link active">Description</a>
+                            <a href="#tab-vuln-20-18-2" class="tab-link">HTTP Request</a>
+                            <a href="#tab-vuln-20-18-4" class="tab-link">cURL command line</a>
+                            <a href="#tab-vuln-20-18-5" class="tab-link">WSTG Code</a>
+                        </nav>
+                        <section id="tab-vuln-20-18-1" class="tab-content" style="min-height: 124px;">
+                            <pre>Response contains potential system path: C:\Users\olowo\AppData\Local\Temp</pre>
+                        </section>
+                        <section id="tab-vuln-20-18-2" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre style="white-space: normal;">
+                                    GET /dashboard/phpinfo.php HTTP/1.1
+                                    <br>
+                                    host: 127.0.0.1
+                                    <br>
+                                    connection: keep-alive
+                                    <br>
+                                    user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0
+                                    <br>
+                                    accept-language: en-US
+                                    <br>
+                                    accept-encoding: gzip, deflate, br
+                                    <br>
+                                    accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+                                    <br>
+                            </pre>
+                        </section>
+                        <section id="tab-vuln-20-18-4" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>curl &#34;http://127.0.0.1/dashboard/phpinfo.php&#34;</pre>
+                        </section>
+                        <section id="tab-vuln-20-18-5" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>[&#39;WSTG-ERRH-01&#39;]</pre>
+                        </section>
+                    </div>
+                    <div class="tab-container">
+                        <h4><span class="severity severity-low"></span> Vulnerability found in /dashboard/phpinfo.php</h4>
+                        <nav class="tab-nav">
+                            <a href="#tab-vuln-20-19-1" class="tab-link active">Description</a>
+                            <a href="#tab-vuln-20-19-2" class="tab-link">HTTP Request</a>
+                            <a href="#tab-vuln-20-19-4" class="tab-link">cURL command line</a>
+                            <a href="#tab-vuln-20-19-5" class="tab-link">WSTG Code</a>
+                        </nav>
+                        <section id="tab-vuln-20-19-1" class="tab-content" style="min-height: 124px;">
+                            <pre>Response contains potential system path: C:\Users\olowo</pre>
+                        </section>
+                        <section id="tab-vuln-20-19-2" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre style="white-space: normal;">
+                                    GET /dashboard/phpinfo.php HTTP/1.1
+                                    <br>
+                                    host: 127.0.0.1
+                                    <br>
+                                    connection: keep-alive
+                                    <br>
+                                    user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0
+                                    <br>
+                                    accept-language: en-US
+                                    <br>
+                                    accept-encoding: gzip, deflate, br
+                                    <br>
+                                    accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+                                    <br>
+                            </pre>
+                        </section>
+                        <section id="tab-vuln-20-19-4" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>curl &#34;http://127.0.0.1/dashboard/phpinfo.php&#34;</pre>
+                        </section>
+                        <section id="tab-vuln-20-19-5" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>[&#39;WSTG-ERRH-01&#39;]</pre>
+                        </section>
+                    </div>
+                    <div class="tab-container">
+                        <h4><span class="severity severity-low"></span> Vulnerability found in /dashboard/phpinfo.php</h4>
+                        <nav class="tab-nav">
+                            <a href="#tab-vuln-20-20-1" class="tab-link active">Description</a>
+                            <a href="#tab-vuln-20-20-2" class="tab-link">HTTP Request</a>
+                            <a href="#tab-vuln-20-20-4" class="tab-link">cURL command line</a>
+                            <a href="#tab-vuln-20-20-5" class="tab-link">WSTG Code</a>
+                        </nav>
+                        <section id="tab-vuln-20-20-1" class="tab-content" style="min-height: 124px;">
+                            <pre>Response contains potential system path: C:\Program Files\Oracle\VirtualBox\</pre>
+                        </section>
+                        <section id="tab-vuln-20-20-2" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre style="white-space: normal;">
+                                    GET /dashboard/phpinfo.php HTTP/1.1
+                                    <br>
+                                    host: 127.0.0.1
+                                    <br>
+                                    connection: keep-alive
+                                    <br>
+                                    user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0
+                                    <br>
+                                    accept-language: en-US
+                                    <br>
+                                    accept-encoding: gzip, deflate, br
+                                    <br>
+                                    accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+                                    <br>
+                            </pre>
+                        </section>
+                        <section id="tab-vuln-20-20-4" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>curl &#34;http://127.0.0.1/dashboard/phpinfo.php&#34;</pre>
+                        </section>
+                        <section id="tab-vuln-20-20-5" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>[&#39;WSTG-ERRH-01&#39;]</pre>
+                        </section>
+                    </div>
+                    <div class="tab-container">
+                        <h4><span class="severity severity-low"></span> Vulnerability found in /dashboard/docs/configure-wildcard-subdomains.html</h4>
+                        <nav class="tab-nav">
+                            <a href="#tab-vuln-20-21-1" class="tab-link active">Description</a>
+                            <a href="#tab-vuln-20-21-2" class="tab-link">HTTP Request</a>
+                            <a href="#tab-vuln-20-21-4" class="tab-link">cURL command line</a>
+                            <a href="#tab-vuln-20-21-5" class="tab-link">WSTG Code</a>
+                        </nav>
+                        <section id="tab-vuln-20-21-1" class="tab-content" style="min-height: 124px;">
+                            <pre>Response contains potential system path: C:\windows\system32\drivers\etc\hosts</pre>
+                        </section>
+                        <section id="tab-vuln-20-21-2" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre style="white-space: normal;">
+                                    GET /dashboard/docs/configure-wildcard-subdomains.html HTTP/1.1
+                                    <br>
+                                    host: 127.0.0.1
+                                    <br>
+                                    connection: keep-alive
+                                    <br>
+                                    user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0
+                                    <br>
+                                    accept-language: en-US
+                                    <br>
+                                    accept-encoding: gzip, deflate, br
+                                    <br>
+                                    accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+                                    <br>
+                            </pre>
+                        </section>
+                        <section id="tab-vuln-20-21-4" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>curl &#34;http://127.0.0.1/dashboard/docs/configure-wildcard-subdomains.html&#34;</pre>
+                        </section>
+                        <section id="tab-vuln-20-21-5" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>[&#39;WSTG-ERRH-01&#39;]</pre>
+                        </section>
+                    </div>
+                    <div class="tab-container">
+                        <h4><span class="severity severity-low"></span> Vulnerability found in /dashboard/docs/troubleshoot-apache.html</h4>
+                        <nav class="tab-nav">
+                            <a href="#tab-vuln-20-22-1" class="tab-link active">Description</a>
+                            <a href="#tab-vuln-20-22-2" class="tab-link">HTTP Request</a>
+                            <a href="#tab-vuln-20-22-4" class="tab-link">cURL command line</a>
+                            <a href="#tab-vuln-20-22-5" class="tab-link">WSTG Code</a>
+                        </nav>
+                        <section id="tab-vuln-20-22-1" class="tab-content" style="min-height: 124px;">
+                            <pre>Response contains potential system path: C:\Windows\system32\drivers\etc\hosts</pre>
+                        </section>
+                        <section id="tab-vuln-20-22-2" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre style="white-space: normal;">
+                                    GET /dashboard/docs/troubleshoot-apache.html HTTP/1.1
+                                    <br>
+                                    host: 127.0.0.1
+                                    <br>
+                                    connection: keep-alive
+                                    <br>
+                                    user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0
+                                    <br>
+                                    accept-language: en-US
+                                    <br>
+                                    accept-encoding: gzip, deflate, br
+                                    <br>
+                                    accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+                                    <br>
+                            </pre>
+                        </section>
+                        <section id="tab-vuln-20-22-4" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>curl &#34;http://127.0.0.1/dashboard/docs/troubleshoot-apache.html&#34;</pre>
+                        </section>
+                        <section id="tab-vuln-20-22-5" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>[&#39;WSTG-ERRH-01&#39;]</pre>
+                        </section>
+                    </div>
+                    <div class="tab-container">
+                        <h4><span class="severity severity-low"></span> Vulnerability found in /dashboard/docs/troubleshoot-apache.html</h4>
+                        <nav class="tab-nav">
+                            <a href="#tab-vuln-20-23-1" class="tab-link active">Description</a>
+                            <a href="#tab-vuln-20-23-2" class="tab-link">HTTP Request</a>
+                            <a href="#tab-vuln-20-23-4" class="tab-link">cURL command line</a>
+                            <a href="#tab-vuln-20-23-5" class="tab-link">WSTG Code</a>
+                        </nav>
+                        <section id="tab-vuln-20-23-1" class="tab-content" style="min-height: 124px;">
+                            <pre>Response contains potential system path: C:\ProgramData\VMware\hostd\config.xml</pre>
+                        </section>
+                        <section id="tab-vuln-20-23-2" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre style="white-space: normal;">
+                                    GET /dashboard/docs/troubleshoot-apache.html HTTP/1.1
+                                    <br>
+                                    host: 127.0.0.1
+                                    <br>
+                                    connection: keep-alive
+                                    <br>
+                                    user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0
+                                    <br>
+                                    accept-language: en-US
+                                    <br>
+                                    accept-encoding: gzip, deflate, br
+                                    <br>
+                                    accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+                                    <br>
+                            </pre>
+                        </section>
+                        <section id="tab-vuln-20-23-4" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>curl &#34;http://127.0.0.1/dashboard/docs/troubleshoot-apache.html&#34;</pre>
+                        </section>
+                        <section id="tab-vuln-20-23-5" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>[&#39;WSTG-ERRH-01&#39;]</pre>
+                        </section>
+                    </div>
+
+                <dl><dt>Solutions</dt><dd>Ensure that error messages and application responses do not disclose full filesystem paths or other sensitive system information. Use generic error messages for end users and log detailed errors only on the server side.</dd></dl>
+                <h5>References</h5>
+                <ul>
+                    <li><a href="https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/01-Information_Gathering/05-Review_Web_Page_Content_for_Information_Leakage">OWASP: Information Leakage</a></li>
+                    <li><a href="https://cwe.mitre.org/data/definitions/209.html">CWE-209: Generation of Error Message Containing Sensitive Information</a></li>
+                    <li><a href="http://projects.webappsec.org/w/page/13246936/Information%20Leakage">WASC-13: Information Leakage</a></li>
+                </ul>
+                <br />
+                <hr>
+                <h3 id="vuln_type_26">Secure Flag cookie</h3>
+                <dl>
+                    <dt>Description</dt>
+                    <dd>The secure flag is an option that can be set by the application server when sending a new cookie to the user within an HTTP Response. The purpose of the secure flag is to prevent cookies from being observed by unauthorized parties due to the transmission of a the cookie in clear text.</dd>
+                </dl>
+
+                    <div class="tab-container">
+                        <h4><span class="severity severity-low"></span> Vulnerability found in /phpmyadmin/</h4>
+                        <nav class="tab-nav">
+                            <a href="#tab-vuln-26-0-1" class="tab-link active">Description</a>
+                            <a href="#tab-vuln-26-0-2" class="tab-link">HTTP Request</a>
+                            <a href="#tab-vuln-26-0-4" class="tab-link">cURL command line</a>
+                            <a href="#tab-vuln-26-0-5" class="tab-link">WSTG Code</a>
+                        </nav>
+                        <section id="tab-vuln-26-0-1" class="tab-content" style="min-height: 124px;">
+                            <pre>Secure flag is not set on the cookie: &#39;phpMyAdmin&#39; set at &#39;http://127.0.0.1/phpmyadmin/&#39;</pre>
+                        </section>
+                        <section id="tab-vuln-26-0-2" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre style="white-space: normal;">
+                                    GET /phpmyadmin/ HTTP/1.1
+                                    <br>
+                                    host: 127.0.0.1
+                                    <br>
+                                    connection: keep-alive
+                                    <br>
+                                    user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0
+                                    <br>
+                                    accept-language: en-US
+                                    <br>
+                                    accept-encoding: gzip, deflate, br
+                                    <br>
+                                    accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+                                    <br>
+                            </pre>
+                        </section>
+                        <section id="tab-vuln-26-0-4" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>curl &#34;http://127.0.0.1/phpmyadmin/&#34;</pre>
+                        </section>
+                        <section id="tab-vuln-26-0-5" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>[&#39;WSTG-SESS-02&#39;]</pre>
+                        </section>
+                    </div>
+                    <div class="tab-container">
+                        <h4><span class="severity severity-low"></span> Vulnerability found in /phpmyadmin/</h4>
+                        <nav class="tab-nav">
+                            <a href="#tab-vuln-26-1-1" class="tab-link active">Description</a>
+                            <a href="#tab-vuln-26-1-2" class="tab-link">HTTP Request</a>
+                            <a href="#tab-vuln-26-1-4" class="tab-link">cURL command line</a>
+                            <a href="#tab-vuln-26-1-5" class="tab-link">WSTG Code</a>
+                        </nav>
+                        <section id="tab-vuln-26-1-1" class="tab-content" style="min-height: 124px;">
+                            <pre>Secure flag is not set on the cookie: &#39;pma_lang&#39; set at &#39;http://127.0.0.1/phpmyadmin/&#39;</pre>
+                        </section>
+                        <section id="tab-vuln-26-1-2" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre style="white-space: normal;">
+                                    GET /phpmyadmin/ HTTP/1.1
+                                    <br>
+                                    host: 127.0.0.1
+                                    <br>
+                                    connection: keep-alive
+                                    <br>
+                                    user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0
+                                    <br>
+                                    accept-language: en-US
+                                    <br>
+                                    accept-encoding: gzip, deflate, br
+                                    <br>
+                                    accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+                                    <br>
+                            </pre>
+                        </section>
+                        <section id="tab-vuln-26-1-4" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>curl &#34;http://127.0.0.1/phpmyadmin/&#34;</pre>
+                        </section>
+                        <section id="tab-vuln-26-1-5" class="tab-content" style="min-height: 124px; display: none;">
+                            <pre>[&#39;WSTG-SESS-02&#39;]</pre>
+                        </section>
+                    </div>
+
+                <dl><dt>Solutions</dt><dd>When generating the cookie, make sure to set the Secure Flag to True.</dd></dl>
+                <h5>References</h5>
+                <ul>
+                    <li><a href="https://owasp.org/www-project-web-security-testing-guide/stable/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html">OWASP: Testing for Cookies Attributes</a></li>
+                    <li><a href="https://owasp.org/www-community/controls/SecureCookieAttribute">OWASP: Secure Cookie Attribute</a></li>
+                </ul>
+                <br />
+                <hr>
+        </div>
+        <footer class="small" id="footer"><a href="https://wapiti-scanner.github.io/" id="wapiti_link">Wapiti 3.3.0</a> &copy; Nicolas SURRIBAS 2006-2026</footer>
+	</div>
+    <script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>

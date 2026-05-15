@@ -1,0 +1,42 @@
+========================================================================
+  MRHN Vulnerability Scan Report
+========================================================================
+  Target:        XML import: Project_NmapScan.xml
+  Scan started:  2026-05-14 00:01:55
+  Scan finished: 2026-05-14 00:01:55
+
+  Summary
+  -------
+  Hosts scanned:      1
+  Open ports found:   4
+  HIGH risk findings: 0
+  MEDIUM risk:        1
+  LOW risk:           1
+  Informational:      2
+
+========================================================================
+  Findings by Host
+========================================================================
+
+  Host: scanme.nmap.org
+  ----------------------------------------------------------------------
+    PORT      RISK      SERVICE       VERSION
+    80/tcp    MEDIUM    http          Apache httpd 2.4.7 (Ubuntu)
+    22/tcp    LOW       ssh           OpenSSH 6.6.1p1 Ubuntu 2ubuntu2.13 U
+    9929/tcp  INFO      nping-echo    Nping echo
+    31337/tcp INFO      tcpwrapped    
+
+    Risk rationale:
+      [MEDIUM] 80/tcp: HTTP — unencrypted; verify redirect to HTTPS
+      [LOW   ] 22/tcp: SSH — encrypted, but verify key auth and version
+      [INFO  ] 9929/tcp: No specific rule; review service and version
+      [INFO  ] 31337/tcp: No specific rule; review service and version
+
+========================================================================
+  Recommended Next Steps
+========================================================================
+  1. Disable or restrict any HIGH-risk legacy services (Telnet, FTP, SMB).
+  2. Verify TLS configuration on any HTTPS service (cipher suites, version).
+  3. Apply patches to services flagged with outdated versions.
+  4. Re-run scan after remediation to confirm closure.
+========================================================================

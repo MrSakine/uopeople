@@ -1,0 +1,57 @@
+{
+  "target": "XML import: Project_NmapScan.xml",
+  "profile": "xml",
+  "scan_started": "2026-05-14 00:01:55",
+  "scan_ended": "2026-05-14 00:01:55",
+  "summary": {
+    "hosts": 1,
+    "open_ports": 4,
+    "HIGH": 0,
+    "MEDIUM": 1,
+    "LOW": 1,
+    "INFO": 2
+  },
+  "hosts": [
+    {
+      "host": "scanme.nmap.org",
+      "ports": [
+        {
+          "port": 22,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "ssh",
+          "version": "OpenSSH 6.6.1p1 Ubuntu 2ubuntu2.13 Ubuntu Linux; protocol 2.0",
+          "risk": "LOW",
+          "rationale": "SSH \u2014 encrypted, but verify key auth and version"
+        },
+        {
+          "port": 80,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "http",
+          "version": "Apache httpd 2.4.7 (Ubuntu)",
+          "risk": "MEDIUM",
+          "rationale": "HTTP \u2014 unencrypted; verify redirect to HTTPS"
+        },
+        {
+          "port": 9929,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "nping-echo",
+          "version": "Nping echo",
+          "risk": "INFO",
+          "rationale": "No specific rule; review service and version"
+        },
+        {
+          "port": 31337,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "tcpwrapped",
+          "version": "",
+          "risk": "INFO",
+          "rationale": "No specific rule; review service and version"
+        }
+      ]
+    }
+  ]
+}
