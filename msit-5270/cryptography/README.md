@@ -608,3 +608,158 @@ MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA...
 **Topic:** RSA Digital Signatures and Hash Functions  
 **Organization:** MedSecure Regional Health Network (MRHN)  
 **Library:** Python `cryptography` package
+
+---
+
+## Vulnerability Assessment
+
+### Overview
+
+In addition to the RSA digital signature tool, this project includes a comprehensive security vulnerability assessment conducted on two different targets to demonstrate practical application of security analysis skills.
+
+### Assessment Details
+
+**Assessment Date:** May 14, 2026  
+**Tools Used:** Wapiti 3.3.0, Nmap 7.99, Custom Python Scanner  
+**Report:** [`VULNERABILITY_ASSESSMENT_REPORT.md`](VULNERABILITY_ASSESSMENT_REPORT.md)
+
+### Targets Scanned
+
+1. **Local Web Server (127.0.0.1)**
+   - Tool: Wapiti vulnerability scanner
+   - Scope: 76 web pages
+   - Findings: 34 vulnerabilities identified
+
+2. **scanme.nmap.org (45.33.32.156)**
+   - Tool: Nmap network security scanner
+   - Scope: 1000 ports
+   - Findings: 4 open ports with security analysis
+
+### Key Findings Summary
+
+**Total Vulnerabilities:** 38 findings across both targets
+
+| Severity | Count | Percentage |
+|----------|-------|------------|
+| CRITICAL | 0 | 0% |
+| HIGH | 0 | 0% |
+| MEDIUM | 5 | 13.2% |
+| LOW | 29 | 76.3% |
+| INFO | 4 | 10.5% |
+
+### Primary Security Issues Identified
+
+1. **Missing Security Headers** (Local Server)
+   - No Content Security Policy (CSP)
+   - No X-Frame-Options (clickjacking protection)
+   - No X-Content-Type-Options (MIME sniffing protection)
+
+2. **Unencrypted Communications** (Both Targets)
+   - HTTP used instead of HTTPS
+   - Sensitive data transmitted in clear text
+   - Missing Secure flag on cookies
+
+3. **Information Disclosure** (Local Server)
+   - System paths exposed via phpinfo.php
+   - 24 instances of full path disclosure
+   - Software versions and configuration details leaked
+
+4. **Outdated Software** (scanme.nmap.org)
+   - Apache 2.4.7 (released 2013)
+   - OpenSSH 6.6.1p1 (released 2014)
+
+### Assessment Artifacts
+
+All scan results and supporting documentation are available in the [`generated_report`](generated_report/) directory:
+
+| File | Description |
+|------|-------------|
+| [`VULNERABILITY_ASSESSMENT_REPORT.md`](VULNERABILITY_ASSESSMENT_REPORT.md) | Comprehensive markdown report with detailed analysis |
+| [`127.0.0.1_05142026_0401.html`](127.0.0.1_05142026_0401.html) | Wapiti full HTML vulnerability scan report |
+| [`generated_report.zip`](generated_report.zip) | Complete archive of all scan artifacts |
+| [`generated_report/Project_NmapScan.nmap`](generated_report/Project_NmapScan.nmap) | Nmap scan results |
+| [`generated_report/scan_report.json`](generated_report/scan_report.json) | Structured vulnerability data |
+| [`generated_report/scan_report.txt`](generated_report/scan_report.txt) | Text summary report |
+| [`generated_report/Appendix_B_vuln_scan2.py`](generated_report/Appendix_B_vuln_scan2.py) | Automated vulnerability scanner script |
+
+### Recommendations Provided
+
+The vulnerability assessment report includes:
+
+✅ **Immediate Actions**
+- Implement HTTPS/TLS encryption
+- Configure security headers
+- Remove information disclosure sources
+- Secure cookie configuration
+
+✅ **Implementation Guides**
+- Apache security headers configuration
+- HTTPS redirect setup
+- PHP session cookie security
+- SSH hardening procedures
+
+✅ **Long-term Strategy**
+- Regular vulnerability scanning schedule
+- Security monitoring implementation
+- Incident response planning
+- Security training for development teams
+
+### Compliance & Standards
+
+The assessment aligns with industry-standard security frameworks:
+
+- **OWASP Top 10 2021**
+- **NIST Cybersecurity Framework**
+- **OWASP Web Security Testing Guide (WSTG)**
+- **CWE (Common Weakness Enumeration)**
+
+### Security Grade Assessment
+
+**Current Security Posture:** C+ (Fair)
+
+**Improvement Roadmap:**
+- Week 1-2: Implement HTTPS and security headers → Grade: B
+- Week 3-4: Update software and remove information disclosure → Grade: B+
+- Week 5-8: Complete all remediation and monitoring → Grade: A-
+
+### Viewing the Report
+
+To view the complete vulnerability assessment:
+
+```bash
+# View the markdown report
+cat VULNERABILITY_ASSESSMENT_REPORT.md
+
+# Or open in a markdown viewer/browser
+# The report includes:
+# - Executive summary
+# - Detailed vulnerability analysis
+# - Risk assessments
+# - Technical remediation guides
+# - Code examples for fixes
+# - Compliance mappings
+```
+
+### Educational Value
+
+This vulnerability assessment demonstrates:
+
+1. **Practical Security Skills**
+   - Use of industry-standard security tools
+   - Systematic vulnerability identification
+   - Risk assessment and prioritization
+
+2. **Cryptography Context**
+   - Importance of encryption (HTTP vs HTTPS)
+   - Secure cookie handling
+   - TLS/SSL implementation
+
+3. **Professional Documentation**
+   - Comprehensive technical writing
+   - Structured vulnerability reporting
+   - Actionable remediation guidance
+
+4. **Real-World Application**
+   - Security assessment methodologies
+   - Compliance framework alignment
+   - Security posture improvement planning
